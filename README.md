@@ -1,65 +1,100 @@
-# 👋 Hey there, I’m Deepak Geddam | @dpacgdm
+# Hey, I'm Deepak 👋
 
-## 🚀 Site Reliability & DevOps Engineer
+Site Reliability Engineer who keeps production systems boring and uneventful. That's the goal, anyway.
 
-I’m a reliability-obsessed DevOps/SRE engineer focused on building, automating, and scaling containerized services—especially at the edge. My passion lies in engineering resilient, high-performance, and globally distributed systems, with hands-on expertise across Linux, GKE, and low-latency reverse-proxy delivery paths.
+Currently running Kubernetes infrastructure for a Fortune 500 retail platform across three AWS regions. Most of my time goes into observability pipelines, GitOps workflows, and writing Go tools that make the 3am pages stop.
 
----
-
-### 🛠️ Core Skills & Tech
-
-- **Cloud & Container Orchestration:** GCP · GKE · Kubernetes · Docker · Docker Compose
-- **Infrastructure as Code:** Terraform (modules, remote state, policy) · YAML/HCL
-- **CI/CD & Automation:** GitHub Actions · Jenkins · Ansible · Python · Bash
-- **Networking & Protocols:** TCP/IP · TLS · HTTP/2–HTTP/3/QUIC · DNS · BGP basics
-- **Edge/CDN & Proxies:** Nginx reverse proxy/cache · HTTP cache · CDN concepts
-- **Observability & SRE:** Prometheus · Grafana · OpenTelemetry · SLI/SLO-driven alerting · Incident response
-- **Security:** Trivy · GitHub secrets · Linux firewall/iptables · TLS at the edge
-- **Data & Analytics:** SQL (Hive/Presto/Trino/Spark SQL) · Redis · PostgreSQL · jq
+📍 Bengaluru, India · Open to relocation worldwide
 
 ---
 
-### 💼 Experience
+## 🔧 What I Work With
 
-#### **Tata Consultancy Services** — DevOps Engineer  
-*Feb 2023 – Jul 2025 | Bengaluru, India*
+**Daily drivers:**
+Kubernetes (EKS) · Terraform · ArgoCD · Prometheus · Grafana · Datadog · Python · Go · Bash
 
-- Supported production Linux systems and containerized services for major clients (Verizon, Shell).
-- Automated monitoring, log shipping, and incident recovery with Bash/Python.
-- Built robust observability (metrics, logs, traces), defined SLI/SLO-style alerts, and tuned Nginx ingress/caching layers.
-- Led on-call rotations, incident response, and postmortems to drive reliability.
-- Automated builds, scans, and deployments using GitHub Actions and Terraform, standardizing secure, auditable releases.
+**Infrastructure:**
+Helm · Karpenter · Ansible · Docker · Istio · Envoy · Nginx
 
-#### Associate DevOps Engineer  
-*May 2021 – Feb 2023 | Bengaluru, India*
+**Observability:**
+OpenTelemetry · ELK Stack · Prometheus Alertmanager
 
-- Engineered secure, multi-environment CI/CD pipelines for GKE workloads.
-- Built reusable Terraform modules for VPC, subnets, firewalls, and state management.
-- Automated policy compliance and vulnerability scanning (Trivy) into CI/CD.
-- Designed Dockerfiles for efficient, secure containerization and reproducible local dev environments.
+**Data:**
+PostgreSQL (Replication/HA) · Redis
 
-#### **Education**
+**Security:**
+HashiCorp Vault · Kubernetes RBAC · SAST/DAST
 
-**Velagapudi Ramakrishna Siddhartha Engineering College**  
-Bachelor of Technology in Civil Engineering – 8.19 CGPA  
-Vijayawada | Aug 2017 – Jul 2021
+**Cloud:**
+AWS (primary) · Azure · GCP
 
 ---
 
+## 🚀 What I'm Building
 
-### 🧩 Fun Facts
+### [kube-slo](https://github.com/your-handle/kube-slo)
+A Kubernetes operator that treats SLOs as Custom Resources. Define your SLO in one YAML file — the controller generates Prometheus recording rules, multi-burn-rate alerting rules, and Grafana dashboards automatically. No more drift between your SLO docs and your actual monitoring.
 
-- 🕹️ **Pokemon Go fanatic** (embarrassing hours played!)
-- 💻 **PC building** addict & hardware tinkerer
-- 🌱 Origami, indoor plants, and anime aficionado
-- 🎬 Old westerns, Toy Story, Alien franchise, and classic cars enthusiast
+`Go · kubebuilder · controller-runtime · Prometheus · Grafana`
+
+### [kube-respond](https://github.com/your-handle/kube-respond)
+A Kubernetes operator that turns incident runbooks into executable CRDs. Define a failure condition, map it to remediation actions, and the cluster heals itself before a human gets paged. Because runbooks shouldn't rot in Confluence.
+
+`Go · controller-runtime · Prometheus API · Kubernetes API · Slack webhook`
 
 ---
 
-### 📫 Let’s Connect
+## 📝 Recent Writing
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/deepakgeddam/)  
-Feel free to reach out or collaborate on DevOps, SRE, or container projects!
+- [Your SLOs Should Be Kubernetes Resources, Not Grafana Dashboards](https://medium.com/@dpacgdm/your-slos-should-be-kubernetes-resources-not-grafana-dashboards-8d94820e2b32))
+
+
+---
+
+## 🏢 Work
+
+**Site Reliability Engineer** @ Tata Consultancy Services — Embedded SRE, Fortune 500 US Retailer
+- 20 microservices · 3 AWS regions · 400K+ MAU
+- Cut MTTD from 15 minutes to under 2 minutes with error-budget-based alerting
+- Migrated 20 microservices from Jenkins to ArgoCD-based GitOps
+- Reduced AWS spend by ~\$12K/month through Karpenter and resource right-sizing
+- Built a self-service Terraform portal that cut environment spin-up from 48 hours to 12 minutes
+
+**Previously:** DevOps Engineer at TCS — PostgreSQL HA, Redis caching, CI/CD standardization
+
+---
+
+## 📜 Certifications
+
+🟦 **Kubernetes:** CKA · CKS
+
+☁️ **Cloud:** Azure DevOps Engineer Expert (AZ-400) · Azure Administrator (AZ-104) · Google ACE
+
+🐧 **Linux:** LFCS
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=dpacgdm&show_icons=true&theme=default&hide_border=true&count_private=true" alt="GitHub Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dpacgdm&theme=default&hide_border=true" alt="GitHub Streak" />
+</p>
+
+---
+
+## 📬 Reach Me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/deepak-geddam)
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=flat&logo=medium&logoColor=white)](https://medium.com/@your-handle)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:dpac.gdm@gmail.com)
+
+---
+
+*I believe the best infrastructure is the kind nobody notices. If production is boring, I'm doing my job right.* 🎯
 
 ---
 
